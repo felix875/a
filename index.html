@@ -1,0 +1,108 @@
+<html>
+<head>
+    <title>Hacked</title>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+    <style type="text/css"> 
+    @import url('https://fonts.googleapis.com/css?family=Orbitron|Courier+New');
+    body, html {
+        height: 100%;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        overflow: hidden; /* Ekran taşmalarını önler */
+    }
+    h1 {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 4em;
+        font-weight: bold;
+        letter-spacing: .35em;
+        text-shadow: 0 0 15px rgba(255,0,0,.85);
+        color: red;
+        margin: 0;
+        text-transform: uppercase;
+        
+    }
+    p {
+        font-family: 'Courier New', monospace;
+        font-size: 1.5em;
+        color: #00FF00;
+        font-weight: bold;
+        text-shadow: 0 0 5px rgba(0,255,0,.85);
+       
+    }
+    #particles-js {
+        position: fixed; 
+        top: 0; 
+        left: 0;
+        width: 100%;
+        height: 100%; 
+       
+    }
+    </style>
+</head> 
+
+<body>
+    <h1>HACKED</h1>
+    <br>
+    <p>Lütfen Sistemdeki Açıkları Kapatınız. Bilgilerinizi Güvende Tutun.</p>
+    <p>Mutlu Günler!</p>
+    
+    <div id="particles-js">
+        <canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="1365" height="949"></canvas>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+    $.getScript("https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js", function() {
+        particlesJS('particles-js', {
+            "particles": {
+                "number": {
+                    "value": 200,  // Parçacık sayısı artırıldı
+                    "density": {
+                        "enable": true,
+                        "value_area": 1000  // Daha yoğun parçacık alanı
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "opacity": {
+                    "value": 0.7,  // Opaklık artırıldı
+                    "random": false
+                },
+                "size": {
+                    "value": 5,
+                    "random": true
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 100,  // Bağlantı mesafesi azaltıldı
+                    "color": "#ffffff",
+                    "opacity": 0.6,
+                    "width": 1.5
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 8  // Hareket hızı artırıldı
+                }
+            },
+            "interactivity": {
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    });
+    </script>
+</body>
+</html>
